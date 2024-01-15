@@ -168,7 +168,8 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFQw4n1bh8tIvkJEFhRT0gtjKn1ayOrGfoPlWpL8wP7XSewI+YlDeX78etOFZmhWn5iXSwIRzKGDZFtSX9UsEoRsczyKfb/QZ4C7Ug6yWooZ05W78OXPiMqe94F03WiIbN5OWYfCU2pnydUwzPPoCeWb5DCKvBjXd8WPcaHdWcBVY/zuWZd0fd1yf15iRrKHu+879j26nUI5/bxk9pd/yD8GIFOPQhR7v2NV9qPkT+M8L+xlFrYR4+G90rkMNSpiqO/7+pI/yWJYYVjSYmixOWYGZIlpGTJH7SYM5AV9fLbra2prB/l5VCZeWetCRQL2Wc6uJ7CL967Mgxyn3hHLjC1SC1BFauGQaQiSLRKowlyf/ckfcoLd8rHowks6iOEZT0BVppzJeIbOsOLG+kghErnM1vVWU0JhxKVWdHq0JC3jFCYvK1NgtA38ZXT0kMT8WcLVVCG9MRjJvKVCSrn1hO6dLAuSe9VQyug2woI0AuovjibL77zZ+5qyjEuqxMs/8= yc-user@epdn77hbevcubj67p8ol
+
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         source: "docker-compose.production.yml"
         target: "taski"
@@ -177,7 +178,8 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFQw4n1bh8tIvkJEFhRT0gtjKn1ayOrGfoPlWpL8wP7XSewI+YlDeX78etOFZmhWn5iXSwIRzKGDZFtSX9UsEoRsczyKfb/QZ4C7Ug6yWooZ05W78OXPiMqe94F03WiIbN5OWYfCU2pnydUwzPPoCeWb5DCKvBjXd8WPcaHdWcBVY/zuWZd0fd1yf15iRrKHu+879j26nUI5/bxk9pd/yD8GIFOPQhR7v2NV9qPkT+M8L+xlFrYR4+G90rkMNSpiqO/7+pI/yWJYYVjSYmixOWYGZIlpGTJH7SYM5AV9fLbra2prB/l5VCZeWetCRQL2Wc6uJ7CL967Mgxyn3hHLjC1SC1BFauGQaQiSLRKowlyf/ckfcoLd8rHowks6iOEZT0BVppzJeIbOsOLG+kghErnM1vVWU0JhxKVWdHq0JC3jFCYvK1NgtA38ZXT0kMT8WcLVVCG9MRjJvKVCSrn1hO6dLAuSe9VQyug2woI0AuovjibL77zZ+5qyjEuqxMs/8= yc-user@epdn77hbevcubj67p8ol
+
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         # Параметр script передаёт в action appleboy/ssh-action команды,
         # которые нужно выполнить на сервере, 
